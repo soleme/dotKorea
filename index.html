@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>도트 코리아 1961–1998</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="wrap">
+  <div id="game">
+    <canvas id="screen" width="320" height="192"></canvas>
+    <div id="ui">
+      <div id="zoneCard" class="hidden"><div class="year"></div><div class="place"></div></div>
+      <div id="hud" class="hidden">
+        <span id="hudChapter"></span>
+        <span id="hudPhotos"></span>
+      </div>
+      <div id="toast" class="hidden"></div>
+      <div id="dialog" class="hidden">
+        <div id="dlgName" class="hidden"></div>
+        <div id="dlgText"></div>
+        <div id="dlgNext">▼</div>
+      </div>
+      <div id="choices" class="hidden"></div>
+      <div id="photoCard" class="hidden">
+        <div class="pc-label">찰칵! 사진을 얻었다</div>
+        <img id="pcImg" alt="">
+        <div id="pcTitle"></div>
+        <div id="pcDesc"></div>
+        <div class="pc-hint">Space / Enter</div>
+      </div>
+      <div id="menu" class="hidden"></div>
+      <div id="album" class="hidden">
+        <div id="albumTabs"></div>
+        <div id="albumBody">
+          <div id="albumGrid"></div>
+          <div id="albumDetail"></div>
+        </div>
+        <div class="album-hint">←→↑↓ 이동 · Q/E 챕터 · X/Esc 닫기</div>
+      </div>
+      <div id="title" class="hidden"></div>
+      <div id="fade"></div>
+      <div id="flash"></div>
+    </div>
+  </div>
+  <div id="touch" class="hidden">
+    <div id="dpad">
+      <button data-k="up" class="d-up">▲</button>
+      <button data-k="left" class="d-left">◀</button>
+      <button data-k="right" class="d-right">▶</button>
+      <button data-k="down" class="d-down">▼</button>
+    </div>
+    <div id="abtn">
+      <button data-k="cancel" class="b-b">B</button>
+      <button data-k="ok" class="b-a">A</button>
+    </div>
+  </div>
+</div>
+<script src="js/audio.js"></script>
+<script src="js/sprites.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/story_common.js"></script>
+<script src="js/story_ch1.js"></script>
+<script src="js/story_ch2.js"></script>
+<script src="js/story_ch3.js"></script>
+<script src="js/story_ch4.js"></script>
+<script src="js/story_ch5.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
